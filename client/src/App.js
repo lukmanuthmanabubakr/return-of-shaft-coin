@@ -16,25 +16,9 @@ const images = [
 ];
 
 function App() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000, // Adjust the speed as needed
-  };
-
   return (
     <div className="slider-container">
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <div key={index} className="slider-item">
-            <img src={image} alt={`Slide ${index + 1}`} />
-          </div>
-        ))}
-      </Slider>
+      app
     </div>
   );
 }
